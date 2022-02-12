@@ -62,8 +62,8 @@ fclean: clean
 	${RM} ${NAME}
 
 clean:
-	${RM} ${OBJS}
+	${RM} ${OBJS} ${BONUS_O}
 
 re: fclean all
 
-.PHONY: all clean fclean program re .c.o bonus
+.PHONY: all clean fclean re .c.o bonus

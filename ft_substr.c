@@ -16,9 +16,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	lens;
 	char	*substring;
-	size_t	index;
+	size_t	i1;
 
-	index = 0;
+	i1 = 0;
 	lens = ft_strlen(s);
 	if (!s)
 		return (NULL);
@@ -35,7 +35,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substring = (char *) malloc(len + 1);
 	if (substring == NULL)
 		return (NULL);
-	while (index++ < start)
+	while (i1++ < start)
 		s++;
 	ft_strlcpy(substring, s, len + 1);
 	return (substring);

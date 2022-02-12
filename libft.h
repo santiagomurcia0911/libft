@@ -14,7 +14,7 @@
 # define LIBFT_H
 
 # include <unistd.h>
-# include<stdlib.h>
+# include <stdlib.h>
 
 typedef struct elemento
 {
